@@ -42,15 +42,13 @@ A client has hired you to automatically post some of their brand messages to twi
   * **Hint:** How can you iterate over every word in a tweet and compare it to the hash keys? Convert the tweet into an array to enable this. Then, make sure to convert it back into a string to return the shortened tweet at the end of the method.
   * **Hint:** How can you grab all of the keys of the hash for the purpose of comparing them to the words in the tweet? Use the `.keys` method. 
 
-2. Write a method, `bulk_tweet_shortener` that takes in an array of tweets, iterates over them, shortens them, and `puts` out the results to the screen. 
+2. Write a method, `bulk_tweet_shortener` that takes in an array of tweets, iterates over them, shortens them, `puts` out the results to the screen, **and** returns the results. 
   * **Hint:** You already wrote a method that shortens tweets. Use it!
   * **Hint:** Remember that you can `puts` out the result of a method by putting `puts` in front of the method call. 
 
-
-
   Now the client has come back to you. They love the program, but they noticed that even tweets that are under 140 characters are being shortened. Now they want you to only shorten the tweet if it's too long.
 
-3. Write a new method, `selective_tweet_shortener`, that only does the substitutions if the tweet is longer than 140 characters. If the tweet is 140 characters or shorter, just return the original tweet.
+3. Write a new method, `selective_tweet_shortener`, that only does the substitutions if the tweet is longer than 140 characters. If the tweet is 140 characters or shorter, just return the original tweet. Keep in mind the difference between _displaying_ something and _returning_ it.
 
   Things are going great, but you're noticing that some tweets are too long still, even after substituting shorter words. Being the conscientious developer that you are, you talk to the client about this scenario and decide together that the best thing to do is just truncate the string to 140 characters if it's still too long after you do the substitution.
   
