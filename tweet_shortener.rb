@@ -42,3 +42,10 @@ def selective_tweet_shortener(str)
   end   
 end 
 
+def shortened_tweet_truncator(str)
+  str[0..140] + "..."
+end 
+
+
+
+
